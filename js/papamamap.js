@@ -404,7 +404,7 @@ Papamamap.prototype.getPopupContent = function(feature)
         var vacancy = feature.get('Vacancy') ? feature.get('Vacancy') : feature.get('Vacancy');
         if (vacancy !== undefined && vacancy !== null) {
             /**content += '<a href="http://www.city.sapporo.jp/kodomo/kosodate/l4_01.html" target="_blank">空きあり</a>'; */
-            content += '<a href="http://www1.city.matsue.shimane.jp/kyouiku/hoiku/hoyoukodomo/hoikusho/29nennyuusyokanoujidousuu.html" target="_blank">空きあり</a>';
+            content += '<a href="http://www1.city.matsue.shimane.jp/kyouiku/hoiku/hoyoukodomo/hoikusho/H30nyusyokanouwaku.html" target="_blank">空きあり</a>';
         }
         var vacancyDate = feature.get('VacancyDate');
         if (vacancyDate !== undefined && vacancyDate !== null) {
