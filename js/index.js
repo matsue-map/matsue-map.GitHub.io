@@ -111,6 +111,7 @@ $('#mainPage').on('pageshow', function() {
 	}
 
 	// 最寄駅セレクトボックスの生成
+    /* 未使用
 	mtl = new MoveToList();
 	mtl.loadStationJson().then(function() {
 		mtl.appendToMoveToListBox(moveToList);
@@ -119,6 +120,7 @@ $('#mainPage').on('pageshow', function() {
 			mtl.appendToMoveToListBox(moveToList);
 		});
 	});
+    */
 
 	// 保育施設クリック時の挙動を定義
 	map.on('click', function(evt) {
