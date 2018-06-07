@@ -411,11 +411,11 @@ Papamamap.prototype.getPopupContent = function(feature)
             /**content += '<a href="http://www.city.sapporo.jp/kodomo/kosodate/l4_01.html" target="_blank">空きあり</a>'; */
             content += '<a href="http://www1.city.matsue.shimane.jp/kyouiku/hoiku/hoyoukodomo/hoikusho/H30nyusyokanouwaku.html" target="_blank">空きあり</a>';
             if (vacancyDate !== undefined && vacancyDate !== null) {
-                content += "<br> (" + vacancyDate + ")";
+                content += "<br> " + vacancyDate;
             }
         } else {
             if (vacancyDate !== undefined && vacancyDate !== null) {
-                content += "(" + vacancyDate + ")";
+                content += vacancyDate;
             }
         }
         content += '</td>';
