@@ -386,6 +386,7 @@ Papamamap.prototype.getPopupContent = function(feature)
     }
 
     var type = feature.get('種別') ? feature.get('種別') : feature.get('Type');
+    /* ◇
     if(type == "認可外") {
         content += '<tr>';
         content += '<th>監督基準</th>';
@@ -397,6 +398,8 @@ Papamamap.prototype.getPopupContent = function(feature)
         content += '</td>';
         content += '</tr>';
     }
+    */
+
     if(type == "認可保育所") {
         content += '<tr>';
         content += '<th>欠員</th>';
@@ -437,11 +440,13 @@ Papamamap.prototype.getPopupContent = function(feature)
         content += '</tr>';
     }
     var add1 = feature.get('住所１') ? feature.get('住所１') : feature.get('Add1');
-    var add2 = feature.get('住所２') ? feature.get('住所２') : feature.get('Add2');
-    if (add1 !== undefined && add2 !== undefined) {
+    // ◇ var add2 = feature.get('住所２') ? feature.get('住所２') : feature.get('Add2');
+    // ◇ if (add1 !== undefined && add2 !== undefined) {
+    if (add1 !== undefined) {
         content += '<tr>';
         content += '<th>住所</th>';
-        content += '<td>' + add1 + add2 +'</td>';
+        // ◇ content += '<td>' + add1 + add2 +'</td>';
+        content += '<td>' + add1 +'</td>';
         content += '</tr>';
     }
     var owner = feature.get('設置者') ? feature.get('設置者') : feature.get('Owner');
